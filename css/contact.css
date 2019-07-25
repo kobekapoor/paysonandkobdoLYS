@@ -68,14 +68,15 @@ label
 
 .formContainer .submitbtn
 {
-    width: 99%;
+    width: 30%;
+    margin: auto;
     text-align: center;
     border: 2px solid white;
     background-color: white;
     color: #FF4929;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 32px;
+    border-radius: 5px;
     font-weight: bold;
     text-decoration: none;
     text-shadow: unset;
@@ -84,7 +85,7 @@ label
 
 .formContainer .submitbtn:hover
 {
-    background: #0ED2F7;
+    background: #FF4929;
     color: white;
 }
 
