@@ -1,0 +1,195 @@
+body
+{
+    background: white; /* fallback for old browsers */
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav 
+{
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    padding-bottom: 30px;
+    border-bottom: 30px solid #E7E7E7;
+
+}
+
+nav img 
+{
+    
+    margin-left: 30px;
+    float: left;
+    margin-top: 20px;
+}
+
+nav .btn
+{
+    margin-right: 30px;
+    border: 2px solid white;
+    background-color: #F2492A;
+    color: white;
+    padding: 15px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    float: right;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: unset;
+    margin-top: 30px;
+}
+
+nav .btn:hover
+{
+    background: white;
+    color: #F2492A;
+}
+
+p, h1, h2, h3, li, button, a, label
+{
+    font-family: 'Oxygen', sans-serif;
+    color: #ffffff;
+    text-shadow: 0 0 2px black;
+}
+
+h3, p
+{
+    color: black;
+    text-shadow: none;
+    text-shadow: 0 0 2px white;
+}
+
+.services, .contact
+{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.fp-controlArrow.fp-prev 
+{
+    left: 40px;
+}
+
+.fp-controlArrow.fp-next 
+{
+    right: 40px;
+}
+
+.fp-controlArrow.fp-next:hover
+{
+    border-width: 57.75px 0 57.75px 51px;
+    right: 31.5px;
+    margin-top: -57.25px;
+}
+
+.fp-controlArrow.fp-prev:hover 
+{
+    border-width: 57.75px 51px 57.75px 0;
+    left: 31.5px;
+    margin-top: -57.25px;
+}
+
+#servicesFlex
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    border: solid 2px red;
+}
+
+#servicesFlex div
+{
+    width: 26%;
+}
+
+#servicesFlex div img
+{
+    border: solid 2px red;
+    margin: -100px;
+}
+
+
+#section2
+{
+    text-align: center;
+    align-content: center;
+}
+
+#aboutFlex
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 50%;
+    margin: auto;
+}
+
+#aboutFlex div
+{
+    width: 50%;
+}
+
+#aboutFlex div img
+{
+    /*border: 1px solid white;*/
+    border-radius: 15px;
+}
+
+.servicesImg
+{
+    padding: 0;
+}
+
+#largeLogo
+{
+    width: 50%;
+    animation: logoAnimation;
+    animation-duration: 1s;
+}
+
+@keyframes logoAnimation
+{
+    from {width: 1%; margin-top: 500px;}
+    to {width: 50%; margin-top: 0px;}
+}
+
+#arrow
+{
+    position: fixed;
+    margin: auto;
+    text-align: center;
+    width: 8%;
+    animation: arrowAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    bottom: 30px;
+    margin-left: -4%;
+}
+
+@keyframes arrowAnimation
+{
+    from {bottom: 20px;}
+    to {bottom: 35px;}
+}
+
+#arrowLink
+{
+    text-align: center;
+    margin: auto;
+    position: fixed;
+    margin: auto;
+    text-align: center;
+}
+
+#section4
+{
+    background: #E7E7E7; 
+    margin: auto;
+    text-align: center;
+}

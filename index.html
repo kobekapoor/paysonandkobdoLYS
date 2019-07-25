@@ -1,0 +1,194 @@
+﻿<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Love Your Site</title>
+    <meta name="description" content="A few of my closest friends and I, who all grew up using computers, started a business to get your company on the internet.">
+    <meta name="author" content="Love Your Site, LLC">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css" />
+	<style>
+    /* Overwriting styles for control arrows for slides
+	* --------------------------------------- */
+	.controlArrow.prev {
+		left: 50px;
+	}
+	.controlArrow.next{
+		right: 50px;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+</head>
+
+<body>
+    <div class="nav">
+        <nav>
+            <img src="images/logo/logo_full_white.svg" height="60" alt="logo" />
+            <a href="#5thPage" class="btn">Contact Us Now</a>
+        </nav>
+    </div>
+        
+    <div id="fullpage">
+        <div class="section" id="section0">
+            <div class="intro">
+                
+                <a href="#2ndPage" id="arrowLink"><img src="images/arrow.png" id="arrow" class="introImg"/></a>
+            </div>
+        </div>
+
+        <div class="section services" id="section1">
+            <div class="intro">
+                <h1>Services</h1>
+            </div>
+            <div class="content" id="servicesFlex">
+                <div>
+                    <img src="images/servicesIcons/websiteDesign.svg" height="400" class="servicesImg"/>
+                    <h3>Website Design</h3>
+                    <p>Designed around YOU</p>
+                </div>
+                <div>
+                    <img src="images/servicesIcons/websiteDevelopment.svg" height="400" class="servicesImg"/>
+                    <h3>Website Development</h3>
+                    <p>Built with your customers as a focus</p>
+                </div>
+                        
+                <div>
+                    <img src="images/servicesIcons/builtByHand.svg" height="400" class="servicesImg"/>
+                    <h3>100% built by hand</h3>
+                    <p>Everything we build is from the ground up</p>
+                </div>
+                <div>
+                    <img src="images/servicesIcons/websiteUpdates.svg" height="400" class="servicesImg"/>
+                    <h3>Website Updates</h3>
+                    <p>Does your website need a fresh coat of paint? Maybe even some new walls? Let’s fix it so you and your customers love it!</p>
+                </div>
+                <div>
+                    <img src="images/servicesIcons/websiteSubscription.svg" height="400" class="servicesImg"/>
+                    <h3>Website Subscription</h3>
+                    <p>We can host your website, take care of your domain and provide regular maintenance and updates. Worry-free, so you can spend time on what matters most to you.</p>
+                </div>
+                <div>
+                    <img src="images/servicesIcons/customPricing.svg" height="400" class="servicesImg"/>
+                    <h3>100% custom pricing</h3>
+                    <p>We know your business is unique – that’s why all our pricing is custom configured to suit your business, giving you the best deal we can, every time</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section2">
+            <div class="intro">
+                <h1>About Us</h1>
+            </div>
+            <div class="content" id="aboutFlex">
+                <div>
+                    <img src="images/ZachNelson.jpg" height="200" />
+                    <h3>Zach Nelson - Founder</h3>
+                </div>
+                <div>
+                    <img src="images/KobeKapoor.jpg" height="200" />
+                    <h3>Kobe Kapoor - Co-Founder</h3>
+                </div>
+                <div>
+                    <img src="images/HelenWalther.jpeg" height="200" />
+                    <h3>Helen Walther - Design</h3>
+                </div>
+                <div>
+                    <img src="images/JathanHibbs.jpg" height="200" />
+                    <h3>Jathan Hibbs - Programming</h3>
+                </div>
+            </div>
+        </div>
+        
+        <!--<div class="section" id="section3">
+            <div class="slide">
+                <div class="intro">
+                    <h1>Example Website 1</h1>
+                </div>
+            </div>
+            <div class="slide">
+                <h1>Example Website 2</h1>
+            </div>
+            <div class="slide">
+                <h1>Example Website 3</h1>
+            </div>
+        </div>-->
+
+        <div class="section contact" id="section4">
+            <div class="intro">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="content">
+                <div class="formContainer" id="formContainer">
+                    <form method="post" action="php/contact.php">
+                        <label for="firsname">First name:</label><br>
+                        <input type="text" name="firstname" id="firstname" class="textInput" required><br>
+                        <label for="lastname">Last name:</label><br>
+                        <input type="text" name="lastname" id="lastname" class="textInput" required><br>
+                        <label for="address">Email:</label><br>
+                        <input type="email" name="address" id="address" class="textInput" required><br>
+                        <label for="message">Your message:</label><br>
+                        <textarea name="message" id="message" class="textInput" required></textarea><br><br>
+                        <input type="hidden" id="pageLocation" name="pageLocation" value="#5thPage">
+                        <input type="submit" value="Submit" class="submitbtn">
+                    </form>
+                    <?php
+                        if(isset($_GET["sent"]))
+                        {
+                            $isSent = $_GET["sent"];
+
+                            if($isSent == 1)
+                            {
+                                echo '<p class="successMessage" style="color: green;">Message has been successfully sent</p>';
+                            }
+                            else if($isSent == 2)
+                            {
+                                echo '<p class="errorMessage" style="color: red;">Something went wrong sending your message, please try again</p>';
+                            }
+                        }
+                    ?>
+                </div>
+            </div>
+        </div>
+        <div class="section fp-auto-height copyright" id="section5">
+            <div class="content">
+                <p>&copy; 2019 Love Your Site, LLC</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            anchors: ['1stPage', '2ndPage', '3rdPage', '4thPage', '5thPage'],
+            navigation: true,
+            navigationPosition: 'right',
+            animateAnchor: false,
+            licenseKey: '809A8A60-979346A9-8247B2CF-148E33E6'
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+.formContainer
+{
+    text-align: left;
+    width: 35%;
+    margin: auto;
+}
+
+.formContainer textarea, .formContainer input
+{
+    width: 99%;
+    margin-bottom: 7px;
+    padding: 2px;
+}
+
+.formContainer textarea 
+{
+    resize: none;
+    height: 5.5em;
+}
+
+.successMessage, .errorMessage 
+{
+    text-align: center;
+    text-shadow: none;
+}
+
+.successMessage 
+{
+    color: lawngreen;
+}
+
+.errorMessage
+{
+    color: red;
+}
+
+.contact.content
+{
+    text-align: center;
+}
+
+.textInput
+{
+    outline: 0;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #ffffff;
+    color: white;
+    text-shadow: 0 0 2px black;
+    margin: 0;
+}
+
+#message
+{
+    line-height: 25px;
+    background-image: linear-gradient(transparent, transparent 24px, #FFFFFF 0px);
+    background-size: 100% 25px;
+    border:none;
+    margin: 0;
+}
+
+label
+{
+    vertical-align: top;
+    font-size: 20px;
+    margin: 0;
+}
+
+.formContainer .submitbtn
+{
+    width: 99%;
+    text-align: center;
+    border: 2px solid white;
+    background-color: white;
+    color: #FF4929;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: unset;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.formContainer .submitbtn:hover
+{
+    background: #0ED2F7;
+    color: white;
+}
+
+/*Removes chrome autofill colors*/
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active
+{
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
+}
