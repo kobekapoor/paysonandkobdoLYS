@@ -17,18 +17,12 @@ nav
 }
 
 #tag{
-    position: relative;
-    top: 50%;  
-    width: 24em;
-    margin: 0 auto;
-    border-right: 2px solid black;
-    font-size: 50px;
     text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);
-
+    margin: auto;
+    text-decoration: none;
+    font-size: 70px;
     font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 300;
 
 }
 
@@ -65,13 +59,19 @@ nav .btn:hover
 
 p, h1, h2, h3, li, button, a, label
 {
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Alegreya Sans Light', sans-serif;
     color: #FF4929;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
 }
 
-h3, p
+p
 {
     color: black;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 300;
+
 }
 
 .services, .contact
@@ -212,12 +212,12 @@ h3, p
 }
 
 .anim-typewriter{
-    animation: typewriter 3s steps(52) 1s 1 normal both,
+    animation: typewriter 51s steps(51) 1s 1 normal both,
                blinkTextCursor 500ms steps(44) infinite normal;
   }
 @keyframes typewriter{
     from{width: 0;}
-    to{width: 19.8em;}
+    to{width: 19.5em;}
   }
   @keyframes blinkTextCursor{
     from{border-right-color: black}
