@@ -1,19 +1,44 @@
-function hover(element, name) {
+
+var currentlyChanged = {};
+var timer = null;
 
 
-    $(element).animate({'opacity': 0}, 1000, function () {
-        $(this).attr('src','images/servicesIcons/'+name+'_OTHER.svg')
-    }).animate({'opacity': 1}, 1000);
+var iconFadeLength = 1000;
+var switchingBackLength = 5000;
 
 
-    //element.setAttribute('src', 'images/servicesIcons/'+name+'_OTHER.svg');
+function switchLogo(element, name) {
 
+    if(currentlyChanged[name] == true)
+    {
+        return;
+    }
+    currentlyChanged[name] = true;
+
+    $(element).animate({'opacity': 0}, iconFadeLength, function () {
+        $(this).attr('src','images/servicesIcons/'+name+'_OTHER.svg')      
+    }).animate({'opacity': 1}, iconFadeLength);
   }
   
-  function unhover(element, name) {
-    $(element).animate({'opacity': 0}, 1000, function () {
-        $(this).attr('src','images/servicesIcons/'+name+'.svg')
-    }).animate({'opacity': 1}, 1000);
+
+  function switchLogoBack(element, name) {
+
+    if(timer)
+    {
+        clearTimeout(timer);
+        timer  = null;
+    }
+
+    timer = setTimeout(
+        function() 
+        {
+
+            $(element).animate({'opacity': 0}, iconFadeLength, function () {
+                $(this).attr('src','images/servicesIcons/'+name+'.svg')
+            }).animate({'opacity': 1}, iconFadeLength);
+            currentlyChanged[name] = false;
+        }, switchingBackLength);
+        
   }
 
   
