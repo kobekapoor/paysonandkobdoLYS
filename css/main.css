@@ -16,6 +16,22 @@ nav
     background: white;
 }
 
+#tag{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid black;
+    font-size: 50px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+
+    font-family: 'Alegreya Sans', sans-serif;
+
+}
+
 nav img 
 {
     
@@ -194,6 +210,19 @@ h3, p
     margin: auto;
     text-align: center;
 }
+
+.anim-typewriter{
+    animation: typewriter 3s steps(52) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+  }
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 19.8em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: black}
+    to{border-right-color: transparent;}
+  }
 
 
 
