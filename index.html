@@ -46,15 +46,27 @@
 </head>
 
 <body>
-    <div class="nav">
+    <div class="nav main" id="preload">
         <nav>
             <img src="images/logo/logo_full_white.svg" height="60" alt="logo" />
             <a href="#5thPage" class="btn">Contact Us Now</a>
         </nav>
     </div>
         
+
+    <div class="loader" id="loader" onclick="preload()">
+        <img src="images/logo/logo_full.svg">
+    </div>
+
+    <script>
+    
+    
+
+    </script>
+
+
     <div id="fullpage">
-        <div class="section" id="section0">
+        <div class="section main" id="section0">
             <div class="intro">
                 <div class="testtype">
                     <a href="" class="typewrite" id="tag" data-period="2000" data-type='[ "Hi, We are Love ", "We design websites.", "You tell us what you want", "We do the rest." ]'></a>
@@ -63,7 +75,7 @@
             </div>
         </div>
 
-        <div class="section services" id="section1">
+        <div class="section services main" id="section1">
             <div class="intro">
                 <h1>Services</h1>
             </div>
@@ -102,7 +114,7 @@
             </div>
         </div>
 
-        <div class="section" id="section2">
+        <div class="section main" id="section2">
             <div class="intro">
                 <h1>About Us</h1>
             </div>
@@ -140,7 +152,7 @@
             </div>
         </div>-->
 
-        <div class="section contact" id="section4">
+        <div class="section contact main" id="section4">
             <div class="intro">
                 <h1>Contact Us</h1>
             </div>
@@ -190,8 +202,11 @@
             navigation: true,
             navigationPosition: 'right',
             animateAnchor: false,
-            licenseKey: '809A8A60-979346A9-8247B2CF-148E33E6'
+            licenseKey: '809A8A60-979346A9-8247B2CF-148E33E6',
         });
+
+        fullpage_api.setAllowScrolling(false);
+
     </script>
 
 </body>

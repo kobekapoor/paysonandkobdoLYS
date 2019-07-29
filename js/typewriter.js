@@ -54,3 +54,14 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
+
+document.getElementById("loader").addEventListener("click", preload);
+document.getElementById("loader").addEventListener("scroll", preload);
+
+function preload(){
+    document.getElementById("loader").style.opacity = 0;
+    document.getElementById("preload").style.opacity = 1;
+    document.getElementById("section0").style.opacity = 1;
+    fullpage_api.setAllowScrolling(true);
+}

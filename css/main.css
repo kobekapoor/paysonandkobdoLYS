@@ -259,3 +259,31 @@ width: 50%;
 
 
 }
+
+
+/*Pre Loader*/
+
+#loader
+{
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: #FFA21C;
+    position: relative;
+    opacity: 0%;
+    transition: 1s;
+}
+
+#loader img
+{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.main
+{
+    opacity: 0;
+    transition-delay: 3s;
+    transition: 1s;
+}
