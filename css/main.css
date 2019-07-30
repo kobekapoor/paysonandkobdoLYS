@@ -269,7 +269,7 @@ width: 50%;
     height: 100%;
     z-index: 10;
     background: #FFA21C;
-    position: relative;
+    position: absolute;
     opacity: 0%;
     transition: 1s;
 }
