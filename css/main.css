@@ -4,6 +4,7 @@ body
     text-align: center;
     padding: 0px;
     margin: 0px;
+    min-width:1000px; 
 }
 
 nav 
@@ -140,20 +141,21 @@ p
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
-    width: 50%;
+    width: 75%;
     margin: auto;
-    
 }
 
 #aboutFlex div
 {
-    width: 50%;
+    width: 33%;
 }
 
 #aboutFlex div img
 {
-    /*border: 1px solid white;*/
-    border-radius: 15px;
+    max-width:200px;
+    max-height:200px;
+    width: auto;
+    height: auto;
 }
 
 .servicesImg
@@ -178,7 +180,7 @@ p
 #arrow
 {
     position: fixed;
-    margin: auto;
+    margin-top: auto;
     text-align: center;
     width: 8%;
     animation: arrowAnimation;
