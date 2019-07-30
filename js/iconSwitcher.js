@@ -1,4 +1,6 @@
 
+
+
 var currentlyChanged = {};
 var timer = null;
 
@@ -8,6 +10,7 @@ var switchingBackLength = 5000;
 
 
 function switchLogo(element, name) {
+    alert("test");
 
     if(currentlyChanged[name] == true)
     {
@@ -16,12 +19,13 @@ function switchLogo(element, name) {
     currentlyChanged[name] = true;
 
     $(element).animate({'opacity': 0}, iconFadeLength, function () {
-        $(this).attr('src','images/servicesIcons/'+name+'_OTHER.svg')      
+        $(this).attr('src','images/servicesIcons/'+name+'GREY.svg')      
     }).animate({'opacity': 1}, iconFadeLength);
   }
   
 
   function switchLogoBack(element, name) {
+    alert("test");
 
     if(timer)
     {
@@ -34,7 +38,7 @@ function switchLogo(element, name) {
         {
 
             $(element).animate({'opacity': 0}, iconFadeLength, function () {
-                $(this).attr('src','images/servicesIcons/'+name+'.svg')
+                $(this).attr('src','images/servicesIcons/'+name+'ORANGE.svg')
             }).animate({'opacity': 1}, iconFadeLength);
             currentlyChanged[name] = false;
         }, switchingBackLength);
