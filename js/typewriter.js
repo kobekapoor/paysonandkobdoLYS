@@ -55,9 +55,12 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
+if(document.getElementById("loader") != null)
+{
+    document.getElementById("loader").addEventListener("click", preload);
+    document.getElementById("loader").addEventListener("scroll", preload);
+}
 
-document.getElementById("loader").addEventListener("click", preload);
-document.getElementById("loader").addEventListener("scroll", preload);
 
 function preload(){
     document.getElementById("loader").style.opacity = 0;
