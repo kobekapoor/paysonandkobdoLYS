@@ -5,14 +5,15 @@ var currentlyChanged = {};
 var timer = {};
 
 
-var iconFadeLength = 1000;
-var switchingBackLength = 5000;
+var iconFadeLength = 750;
+var switchingBackLength = 4000;
 
 
 function switchLogo(element, name) {
 
     if(currentlyChanged[name] == true)
     {
+        clearTimeout(timer[name]);
         return;
     }
     currentlyChanged[name] = true;
