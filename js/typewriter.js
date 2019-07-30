@@ -43,13 +43,26 @@ TxtType.prototype.tick = function() {
     }, delta);
 };
 
-if(document.getElementById("loader") != null)
+window.onload = function() {
+    if(document.getElementById("loader") != null)
 {
     document.getElementById("loader").addEventListener("click", preload);
     document.getElementById("loader").addEventListener("scroll", preload);
-}
+    
+    fullpage_api.setAllowScrolling(false);
+    setTimeout(
+        function() 
+        {
 
-fullpage_api.setAllowScrolling(false);
+            preload();
+        },2500);
+
+}
+};
+
+
+
+
 
 function preload(){
     document.getElementById("loader").style.opacity = 0;
