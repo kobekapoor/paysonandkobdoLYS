@@ -43,25 +43,29 @@ TxtType.prototype.tick = function() {
     }, delta);
 };
 
-
 if(document.getElementById("loader") != null)
 {
     document.getElementById("loader").addEventListener("click", preload);
     document.getElementById("loader").addEventListener("scroll", preload);
 }
 
+fullpage_api.setAllowScrolling(false);
 
 function preload(){
     document.getElementById("loader").style.opacity = 0;
     document.getElementById("loader").style.zIndex = 0;
     document.getElementById("preload").style.opacity = 1;
     document.getElementById("section0").style.opacity = 1;
-    fullpage_api.setAllowScrolling(true);
+
+    document.getElementById("fp-nav").style.opacity = 1;
+    document.getElementById("fp-nav").style.opacity = 1;
+
+    
 
     setTimeout(
         function() 
         {
-
+            fullpage_api.setAllowScrolling(true);
     var elements = document.getElementsByClassName('typewrite');
     for (var i=0; i<elements.length; i++) {
         var toRotate = elements[i].getAttribute('data-type');
