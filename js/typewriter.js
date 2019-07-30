@@ -23,6 +23,10 @@ TxtType.prototype.tick = function() {
     var that = this;
     var delta = 100 - Math.random() * 50;
 
+    if(this.txt == 'Hi' && !this.isDeleting){
+        delta = 1500;
+    }
+
     if (this.isDeleting) { delta /= 2; }
 
     if (!this.isDeleting && this.txt === fullTxt) {
@@ -39,21 +43,6 @@ TxtType.prototype.tick = function() {
     }, delta);
 };
 
-window.onload = function() {
-    var elements = document.getElementsByClassName('typewrite');
-    for (var i=0; i<elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-type');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-          new TxtType(elements[i], JSON.parse(toRotate), period);
-        }
-    }
-    // INJECT CSS
-    var css = document.createElement("style");
-    css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-    document.body.appendChild(css);
-};
 
 if(document.getElementById("loader") != null)
 {
@@ -68,4 +57,25 @@ function preload(){
     document.getElementById("preload").style.opacity = 1;
     document.getElementById("section0").style.opacity = 1;
     fullpage_api.setAllowScrolling(true);
+
+    setTimeout(
+        function() 
+        {
+
+    var elements = document.getElementsByClassName('typewrite');
+    for (var i=0; i<elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-type');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtType(elements[i], JSON.parse(toRotate), period);
+        }
+    }
+
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+    document.body.appendChild(css);
+},1000);
+
 }
