@@ -42,67 +42,93 @@
 	#infoMenu li a {
 		color: #fff;
 	}
+
+    .topFillerHeight{
+        height:140px;
+    }
+
+    .bottomFillerHeight{
+        height:10px;
+    }
+
 	</style>
 </head>
 
 <body>
-    <div class="nav">
+    <div class="nav main" id="preload">
         <nav>
             <img src="images/logo/logo_full_white.svg" height="60" alt="logo" />
             <a href="#5thPage" class="btn">Contact Us Now</a>
         </nav>
     </div>
         
+
+    <div class="loader" id="loader"onclick="preload()"onmousewheel="preload()">
+        <img src="images/logo/logo_full.svg">
+    </div>
+
+
     <div id="fullpage">
-        <div class="section" id="section0">
+        <div class="topFillerHeight">
+
+        </div>
+        <div class="section main" id="section0">
             <div class="intro">
                 <div class="testtype">
-                    <a href="" class="typewrite" id="tag" data-period="2000" data-type='[ "Hi, We are Love ", "We design websites.", "You tell us what you want", "We do the rest." ]'></a>
+                    <a href="" class="typewrite" id="tag" data-period="2000" data-type='[ "Hi, We are Love Your Site", "We design websites.", "You tell us what you want.", "We do the rest." ]'></a>
                 </div>
                 <a href="#2ndPage" id="arrowLink"><img src="images/arrow.png" id="arrow" class="introImg"/></a>
             </div>
+           
         </div>
 
         <div class="section services" id="section1">
+                <div class="topFillerHeight">
+
+                    </div>
             <div class="intro">
                 <h1>Services</h1>
             </div>
             <div class="content" id="servicesFlex">
                 <div>
-                    <img src="images/servicesIcons/websiteDesign.svg" height="400" class="servicesImg" onmouseover="switchLogo(this,'websiteDesign');" onmouseout="switchLogoBack(this,'websiteDesign');"/>
+                    <img src="images/servicesIcons/Designicon_GREY.svg" height="350" class="servicesImg" onmouseover="switchLogo(this,'Designicon');" onmouseout="switchLogoBack(this,'Designicon');"/>
                     <h3>Website Design</h3>
                     <p>Designed around YOU</p>
                 </div>
                 <div>
-                    <img src="images/servicesIcons/websiteDevelopment.svg" height="400" class="servicesImg"/>
+                    <img src="images/servicesIcons/Developmenticon_GREY.svg" height="350" class="servicesImg" onmouseover="switchLogo(this,'Developmenticon');" onmouseout="switchLogoBack(this,'Developmenticon');"/>
                     <h3>Website Development</h3>
                     <p>Built with your customers as a focus</p>
                 </div>
                         
                 <div>
-                    <img src="images/servicesIcons/builtByHand.svg" height="400" class="servicesImg"/>
+                    <img src="images/servicesIcons/Builtbyhandicon_GREY.svg" height="350" class="servicesImg" onmouseover="switchLogo(this,'Builtbyhandicon');" onmouseout="switchLogoBack(this,'Builtbyhandicon');"/>
                     <h3>100% built by hand</h3>
                     <p>Everything we build is from the ground up</p>
                 </div>
                 <div>
-                    <img src="images/servicesIcons/websiteUpdates.svg" height="400" class="servicesImg"/>
+                    <img src="images/servicesIcons/Updatesfinal_GREY.svg" height="350" class="servicesImg" onmouseover="switchLogo(this,'Updatesfinal');" onmouseout="switchLogoBack(this,'Updatesfinal');"/>
                     <h3>Website Updates</h3>
                     <p>Does your website need a fresh coat of paint? Maybe even some new walls? Let’s fix it so you and your customers love it!</p>
                 </div>
                 <div>
-                    <img src="images/servicesIcons/websiteSubscription.svg" height="400" class="servicesImg"/>
+                    <img src="images/servicesIcons/Subscriptionicon_GREY.svg" height="350" class="servicesImg" onmouseover="switchLogo(this,'Subscriptionicon');" onmouseout="switchLogoBack(this,'Subscriptionicon');"/>
                     <h3>Website Subscription</h3>
                     <p>We can host your website, take care of your domain and provide regular maintenance and updates. Worry-free, so you can spend time on what matters most to you.</p>
                 </div>
                 <div>
-                    <img src="images/servicesIcons/customPricing.svg" height="400" class="servicesImg"/>
+                    <img src="images/servicesIcons/CustomIconPricing_GREY.svg" height="350" class="servicesImg" onmouseover="switchLogo(this,'CustomIconPricing');" onmouseout="switchLogoBack(this,'CustomIconPricing');"/>
                     <h3>100% custom pricing</h3>
                     <p>We know your business is unique – that’s why all our pricing is custom configured to suit your business, giving you the best deal we can, every time</p>
                 </div>
             </div>
+            <div class="bottomFillerHeight"></div>
         </div>
 
         <div class="section" id="section2">
+                <div class="topFillerHeight">
+
+                    </div>
             <div class="intro">
                 <h1>About Us</h1>
             </div>
@@ -123,7 +149,16 @@
                     <img src="images/JathanHibbs.jpg" height="200" />
                     <h3>Jathan Hibbs - Programming</h3>
                 </div>
+                <div>
+                    <img src="images/DaltonBlackwell.jpeg" height="200" />
+                    <h3>Dalton Blackwell - Design</h3>
+                </div>
+                <div>
+                    <img src="images/PaysonBlackwell.jpg" height="200" />
+                    <h3>Payson Blackwell - Programming</h3>
+                </div>
             </div>
+            <div class="bottomFillerHeight"></div>
         </div>
         
         <!--<div class="section" id="section3">
@@ -141,6 +176,9 @@
         </div>-->
 
         <div class="section contact" id="section4">
+                <div class="topFillerHeight">
+
+                    </div>
             <div class="intro">
                 <h1>Contact Us</h1>
             </div>
@@ -175,12 +213,13 @@
                     ?>
                 </div>
             </div>
-        </div>
-        <div class="section fp-auto-height copyright" id="section5">
             <div class="content">
                 <p>&copy; 2019 Love Your Site, LLC</p>
             </div>
         </div>
+            <div class="bottomFillerHeight"></div>
+        </div>
+        
     </div>
 
     <script type="text/javascript" src="js/fullpage.js"></script>
@@ -190,8 +229,11 @@
             navigation: true,
             navigationPosition: 'right',
             animateAnchor: false,
-            licenseKey: '809A8A60-979346A9-8247B2CF-148E33E6'
+            licenseKey: '809A8A60-979346A9-8247B2CF-148E33E6',
         });
+
+        fullpage_api.setAllowScrolling(false);
+
     </script>
 
 </body>
